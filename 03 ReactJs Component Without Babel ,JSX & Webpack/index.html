@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <title>React Component Without Babel , JSX and WebPack </title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        class Student extends React.Component{
+            render(){
+                return (
+                    React.createElement("div" , null ,React.createElement("h1" , null , "React TuTorial 03 Created React Component Without Babel , JSX and WebPack")
+                    
+                ))
+            }
+        }
+        ReactDOM.render(React.createElement(Student , null) , document.getElementById("root") )
+    </script>
+</body>
+</html>
